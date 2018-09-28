@@ -1,28 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header>
+      <h3>Data sorting demo</h3>
+    </header>
+
+    <Grid></Grid>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Grid from './components/grid.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Grid
   }
 }
+
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+
+
+  body {
+    margin: 0;
+    font-family: Helvetica Neue, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+  }
+  #app {
+    header {
+      padding: 10px 50px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
 </style>
